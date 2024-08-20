@@ -22,7 +22,7 @@ public class Main {
         System.out.println("Lucro desejado: " + lucroDesejado);
 
         System.out.println("Valor sem imposto: " + valorSemImposto);
-        System.out.println("Valor com imposto: " + valorDoImposto);
+        System.out.println("Valor do imposto: " + valorDoImposto);
         System.out.println("Valor total de venda: " + valorTotal);
         System.out.println("Margem de lucro desejado: " + margemLucro);
         System.out.println("Valor de venda com margem de lucro desejada: " + precoVenda);
