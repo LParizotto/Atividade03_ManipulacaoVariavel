@@ -2,24 +2,30 @@ public class Main {
     public static void main(String[] args) {
 
         //Declaração de variáveis
-        int valor = 10;
+        String nome = "Corona";
+        double precouni = 10.00;
+        int quantidadeComprada = 6;
         double imposto = 0.2;
-        double lucro = 0.2;
+        double lucroDesejado = 0.2;
 
         //Operações
-        double margemlucro = 1 - lucro;
-        double precovenda = valortotal / margemlucro;
-        double ganhos = precovenda - valortotal;
+        double valorSemImposto = precouni * quantidadeComprada;
+        double valorDoImposto = valorSemImposto * 0.2;
+        double valorTotal = valorDoImposto + valorSemImposto;
+        double margemLucro = 1 - lucroDesejado;
+        double precoVenda = valorTotal / margemLucro;
 
-        //Exibição
-        System.out.println("Nome do produto: " + produto);
-        System.out.println("Quantidade: " + quant);
+        System.out.println("Nome do produto: " + nome);
+        System.out.println("Preço único: " + precouni);
+        System.out.println("Quantidade comprada: " + quantidadeComprada);
         System.out.println("Imposto: " + imposto);
-        System.out.println("Lucro: " + lucro);
+        System.out.println("Lucro desejado: " + lucroDesejado);
 
-        System.out.println("Margem de lucro desejada: " + lucro);
-        System.out.println("Preço da venda: " + precovenda);
-        System.out.println("Ganhos da venda: " + ganhos);
+        System.out.println("Valor sem imposto: " + valorSemImposto);
+        System.out.println("Valor com imposto: " + valorDoImposto);
+        System.out.println("Valor total de venda: " + valorTotal);
+        System.out.println("Margem de lucro desejado: " + margemLucro);
+        System.out.println("Valor de venda com margem de lucro desejada: " + precoVenda);
 
     }
 }
